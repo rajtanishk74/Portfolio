@@ -7,8 +7,18 @@
 </head>
 <body>
     <h2>Registration Form</h2>
+    <fieldset>
+        <legend>Student information</legend>
     <form  method="" action="" target="" autocomplete="" novalidate name="">
         <table>
+            <tr>
+                <td>
+                    <label for="stimage">Student image:</label>
+                </td>
+                <td>
+                    <input type="file" name="" id="stimage">
+                </td>
+            </tr>
             <tr>
                 <td>
                     <label for="name">Name: </label>
@@ -22,7 +32,15 @@
                     <label for="fname">Fathe's Name:</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Enter father's name" id="fname">
+                    <input type="text" placeholder="Enter your father's name" id="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mname">Mother's Name:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your mother's name" id="mname">
                 </td>
             </tr>
             <tr>
@@ -30,7 +48,16 @@
                     <label for="phone no">Phone no:</label>
                 </td>
                 <td>
-                    <input id="phone no" placeholder="Enter phone number" type="number" name="" id="">
+                    <input id="phone no" placeholder="+91" type="number" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address:</label>
+                </td>
+                <td>
+                    <textarea  placeholder="Address" name="message" ></textarea>
+
                 </td>
             </tr>
             <tr>
@@ -57,14 +84,14 @@
                     <input type="date" name="" id="">
                 </td>
             </tr>
-            <!-- <tr>
+            <tr>
                 <td>
                     <label>Gender:</label>
                 </td>
                 <td>
                     <input type="radio" name="Gender" id="">Male 
                     <input type="radio" name="Gender" id="">Female
-            </tr> -->
+            </tr>
             <tr>
                 <td>
                     <label for="College">College:</label>
@@ -101,5 +128,6 @@
             </tr>
         </table>
     </form>
+</fieldset>
 </body>
 </html>
