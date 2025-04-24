@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  padding-top: 10rem;
+}
+
+/* Header and Navbar styles */
+.header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(88, 88, 235);
+}
+
+.header .logo {
+  font-size: 1.8rem;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 4.8rem;
+  list-style-type: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: yellow;
+}
+
+/* Hamburger Menu styles */
+.hamburger {
+  display: none;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.close-btn {
+  display: none;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+@media (max-width: 830px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background: rgb(88, 88, 235);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar.open {
+    transform: translateX(0);
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .navbar-link {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+/* ...........................Content css.......................... */
+
+.section-about,
+.section-hero,
+.section-projects,
+.section-skills,
+.section-contact {
+margin-bottom: 3rem;
+
+}
+.section-heading{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+/* ...........Hero section................................ */
+.section-hero {
+  padding: 5rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+  
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-pic {
+  height: 30rem;
+}
+.intro {
+  width: 85rem;
+  gap: 100rem;
+}
+.socials a {
+  font-size: 2.5rem;
+}
+
+
+/* ...........About section................................ */
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10rem;
+  gap: 5rem;
+  font-size: 2rem;
+}
+.about {
+  width: 70rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  line-height: 3.5rem;
+}
+/* ...........Projects section................................ */
+.projects-content {
+  margin-top: -5px;
+  display: flex;
+  flex-direction: row;
+  padding: 10rem;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.project {
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  line-height: 3rem;
+}
+.projects {
+  width: 25rem;
+  height: 20rem;
+}
+
+/* ...........Skills section................................ */
+.skills {
+    background: #f9f9f9;
+    border-top: 3px solid white#ddd;
+    
+    
+  }
+  .skills-grid {
+    margin-top: -5px;
+  display: flex;
+  flex-direction: row;
+  padding: 10rem;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  }
+  .skill-item {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+  }
+  .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .skill-item span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2c5364;
+  }
+  .skill-heading{
+    text-align: center;
+    font-size: 3rem;
+  }
+/* ...................................................................... */
+
+/* ...........Contact section................................ */
+.section-contact {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-contact h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+/* ...................................................................... */
+
+/* ...........footer section................................ */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .social-links a:hover {
+  color: #007bff;
+}
+
+.footer .footer-links {
+  margin: 20px 0;
+}
+
+.footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 10px 0 0;
+}
+
+/* ..................................................................... */
+
+@media (max-width: 830px) {
+  body {
+    overflow-x: hidden;
+    padding-top: 10rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro {
+    width: 30rem;
+  }
+
+  .section-hero {
+    padding: 3rem;
+    font-size: 1.7rem;
+  }
+
+  .profile-pic {
+    height: 28rem;
+  }
+}
+
+@media (max-width: 595px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    background-color: rgb(88, 88, 235);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .navbar {
+    padding: 3rem;
+    background-color: rgb(88, 88, 235);
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .profile-pic {
+    height: 27rem;
+  }
+
+  .section-hero {
+    padding: 3rem;
+    font-size: 2rem;
+   
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .section-about {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 5rem 2rem; /* Adjust padding for better spacing */
+  }
+
+  .about {
+    width: 90%; /* Increased width */
+    text-align: center;
+    border-radius: 2rem;
+    padding: 3rem; /* Increased padding */
+    line-height: 2.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for better visibility */
+  }
+  .section-heading{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
+}

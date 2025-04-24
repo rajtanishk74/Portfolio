@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Tanishk raj</div>
+      <nav class="navbar">
+        <button class="close-btn">&times;</button>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link">Home</a></li>
+          <li><a href="#about" class="navbar-link">About</a></li>
+          <li><a href="#projects" class="navbar-link">Projects</a></li>
+          <li><a href="#skills" class="navbar-link">Skills</a></li>
+          <li><a href="#contact" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">&#9776;</button>
+    </header>
+
+    <main>
+      <section id="home" class="section-hero">
+        <div class="home-content">
+          <div class="intro">
+            <h3>Hi I'm <br /></h3>
+            <h1>Tanishk Raj</h1>
+            <p>
+              Welcome to my portfolio website! I'm a passionate and aspiring
+              software engineer with a strong desire to create innovative
+              solutions and push the boundaries of technology. With a deep love
+              for coding and problem-solving, I am constantly seeking
+              opportunities to learn and grow in this ever-evolving field.
+            </p>
+            <div class="socials">
+              <a class="icon" href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a class="icon" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="icon" href="#"><i class="fa-brands fa-github"></i></a>
+              <a class="icon" href="#"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <img class="profile-pic" src="image/profile.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="about" class="section-about">
+      <div class="about-content">
+        <div class="about">
+          <h3>About me</h3>
+          I'm Tanishk raj , a college student learning web development and
+          data structures & algorithms (DSA). I'm passionate about building
+          innovative web solutions, enhancing my programming skills, and
+          exploring new technologies. I enjoy solving complex problems,
+          collaborating on projects.
+        </div>
+        <div class="about">
+          <h3>Education</h3>
+          <div>
+            <h4>Matriculation: 76 Percent</h4>
+            <p>Patliputra central School Patna Bihar India</p>
+          </div>
+          <div>
+            <h4>Intermediate: 77 Percent</h4>
+            <p>T.P.S. College Patna Bihar India</p>
+          </div>
+          <div>
+            <h4>Bachelor Degree In CSE</h4>
+            <p>Shivalik College Of Engineering Uttarakhand India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section-projects">
+      <h2 class="section-heading">Projects</h2>
+      <div class="projects-content">
+        <div class="project">
+          <h2>Calculator</h2>
+          <img class="projects" src="image/calci.png" alt="" />
+        </div>
+        <div class="project">
+          <h2>Tic Tac Toe</h2>
+          <img class="projects" src="image/tic tac toe.png" alt="" />
+        </div>
+        <div class="project">
+          <h2>To-do List</h2>
+          <img class="projects" src="image/todo.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="skill-heading">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item"><span>HTML</span></div>
+          <div class="skill-item"><span>CSS</span></div>
+          <div class="skill-item"><span>JavaScript</span></div>
+          <div class="skill-item"><span>React</span></div>
+          <div class="skill-item"><span>Java</span></div>
+          <div class="skill-item"><span>C</span></div>
+          <div class="skill-item"><span>C++</span></div>
+          <div class="skill-item"><span>Python</span></div>
+          <div class="skill-item"><span>Data Science</span></div>
+          <div class="skill-item"><span>Machine Learning</span></div>
+        </div>
+      </section>
+    <section id="contact" class="section-contact">
+      <h2 class="section-heading">Contact us</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://github.com/rajtanishk74" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/tanishk-raj-499160290/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p>&copy; 2025 Tanishk raj. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
